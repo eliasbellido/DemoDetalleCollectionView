@@ -14,6 +14,11 @@
 		641243FA20A7E77200AFBFEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 641243F820A7E77200AFBFEE /* LaunchScreen.storyboard */; };
 		6412440520A7E77300AFBFEE /* DemoDetalleCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6412440420A7E77300AFBFEE /* DemoDetalleCollectionViewTests.swift */; };
 		6412441020A7E77300AFBFEE /* DemoDetalleCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6412440F20A7E77300AFBFEE /* DemoDetalleCollectionViewUITests.swift */; };
+		6412441E20A7E83600AFBFEE /* DispositivoCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6412441D20A7E83600AFBFEE /* DispositivoCVCell.swift */; };
+		6412442520A7E8C800AFBFEE /* Dispositivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6412442420A7E8C800AFBFEE /* Dispositivo.swift */; };
+		6412442720A7E91400AFBFEE /* DispositivoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6412442620A7E91400AFBFEE /* DispositivoController.swift */; };
+		6412442920A7FB0000AFBFEE /* DispositivoDetalleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6412442820A7FB0000AFBFEE /* DispositivoDetalleVC.swift */; };
+		6412442B20A7FB1600AFBFEE /* DIspositivoDetalleTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6412442A20A7FB1600AFBFEE /* DIspositivoDetalleTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		6412440B20A7E77300AFBFEE /* DemoDetalleCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoDetalleCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6412440F20A7E77300AFBFEE /* DemoDetalleCollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDetalleCollectionViewUITests.swift; sourceTree = "<group>"; };
 		6412441120A7E77300AFBFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6412441D20A7E83600AFBFEE /* DispositivoCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispositivoCVCell.swift; sourceTree = "<group>"; };
+		6412442420A7E8C800AFBFEE /* Dispositivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispositivo.swift; sourceTree = "<group>"; };
+		6412442620A7E91400AFBFEE /* DispositivoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispositivoController.swift; sourceTree = "<group>"; };
+		6412442820A7FB0000AFBFEE /* DispositivoDetalleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispositivoDetalleVC.swift; sourceTree = "<group>"; };
+		6412442A20A7FB1600AFBFEE /* DIspositivoDetalleTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIspositivoDetalleTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +107,10 @@
 		641243EE20A7E77000AFBFEE /* DemoDetalleCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				6412442120A7E88600AFBFEE /* Controlador */,
+				6412442020A7E88000AFBFEE /* Entidad */,
+				6412441F20A7E86A00AFBFEE /* ViewController */,
 				641243EF20A7E77000AFBFEE /* AppDelegate.swift */,
-				641243F120A7E77000AFBFEE /* ViewController.swift */,
 				641243F320A7E77000AFBFEE /* Main.storyboard */,
 				641243F620A7E77200AFBFEE /* Assets.xcassets */,
 				641243F820A7E77200AFBFEE /* LaunchScreen.storyboard */,
@@ -123,6 +135,33 @@
 				6412441120A7E77300AFBFEE /* Info.plist */,
 			);
 			path = DemoDetalleCollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		6412441F20A7E86A00AFBFEE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				641243F120A7E77000AFBFEE /* ViewController.swift */,
+				6412441D20A7E83600AFBFEE /* DispositivoCVCell.swift */,
+				6412442820A7FB0000AFBFEE /* DispositivoDetalleVC.swift */,
+				6412442A20A7FB1600AFBFEE /* DIspositivoDetalleTVCell.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6412442020A7E88000AFBFEE /* Entidad */ = {
+			isa = PBXGroup;
+			children = (
+				6412442420A7E8C800AFBFEE /* Dispositivo.swift */,
+			);
+			path = Entidad;
+			sourceTree = "<group>";
+		};
+		6412442120A7E88600AFBFEE /* Controlador */ = {
+			isa = PBXGroup;
+			children = (
+				6412442620A7E91400AFBFEE /* DispositivoController.swift */,
+			);
+			path = Controlador;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6412442920A7FB0000AFBFEE /* DispositivoDetalleVC.swift in Sources */,
+				6412442720A7E91400AFBFEE /* DispositivoController.swift in Sources */,
 				641243F220A7E77000AFBFEE /* ViewController.swift in Sources */,
+				6412442520A7E8C800AFBFEE /* Dispositivo.swift in Sources */,
 				641243F020A7E77000AFBFEE /* AppDelegate.swift in Sources */,
+				6412442B20A7FB1600AFBFEE /* DIspositivoDetalleTVCell.swift in Sources */,
+				6412441E20A7E83600AFBFEE /* DispositivoCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
